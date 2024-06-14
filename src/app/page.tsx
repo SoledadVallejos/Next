@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation'; // funcion que direciona a x ruta
+import { redirect } from 'next/navigation';
 
 export default function HomePage() {
 

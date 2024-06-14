@@ -4,8 +4,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'easydrawingguides.com'
+        hostname: 'images.unsplash.com'
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com'
+      }
 
     ]
   }
@@ -13,5 +17,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-

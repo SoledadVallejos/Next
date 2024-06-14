@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from 'react-icons/io5';
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoLogoReact } from 'react-icons/io5';
 import { SidebarMenuItem } from './SidebarMenuItem';
 
 
@@ -16,6 +16,12 @@ const menuItems = [
     title: 'Counter',
     subTitle: 'Contador Client Side'
   },
+  {
+    path: '/dashboard/pokemons',
+    icon: <IoFootball size={40} />,
+    title: 'Pokemons',
+    subTitle: 'Generación Estática'
+  },
 ]
 
 
@@ -24,7 +30,7 @@ export const Sidebar = () => {
 
     <div id="menu" 
       style={{ width: '400px' }}
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll">
+      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 overflow-y-scroll">
 
 
       <div id="logo" className="my-4 px-6">
@@ -42,24 +48,25 @@ export const Sidebar = () => {
         <a href="#" className="inline-flex space-x-2 items-center">
           <span>
             <Image className="rounded-full w-8 h-8" 
-              src="https://easydrawingguides.com/wp-content/uploads/2022/10/how-to-draw-an-easy-realistic-cat-face-featured-image-1200.png" 
+              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c" 
               alt="User avatar" 
               width={50}
               height={50}
+              priority // prioridad true x defecto
             />
           </span>
           <span className="text-sm md:text-base font-bold">
-            Pritty Vallejos
+            Fernando Herrera
           </span>
         </a>
       </div>
 
 
-      <div id="nav" className="w-full px-6">  
+      <div id="nav" className="w-full px-6">
       
         {
           menuItems.map( item => (
-              <SidebarMenuItem  key={ item.path } {...item} /> // ACA LE PASO TODAS LAS PROPS QUE SON REQUERIDAS {...}
+              <SidebarMenuItem  key={ item.path } {...item} />
           ))
         }
 
@@ -82,7 +89,3 @@ export const Sidebar = () => {
     </div>
   )
 }
-
-
- {/*  no se usa la etiqueta tradicional , sino el componente image de Next */}
-     // Configurar el uso de la imagen en el archivo de next config 

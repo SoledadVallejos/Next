@@ -1,13 +1,13 @@
-import { CartCounter } from "@/app/shopping-cart";
+import { CartCounter } from "@/shopping-cart";
 
-export const metadata = { // cambio el nombre del title  
+
+export const metadata = {
  title: 'Shopping Cart',
  description: 'Un simple contador',
 };
 
 
 export default function CounterPage() {
-
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
@@ -17,5 +17,3 @@ export default function CounterPage() {
     </div>
   );
 }
-
-// atajo prc --> functional component

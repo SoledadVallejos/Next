@@ -39,3 +39,5 @@ export default async function PokemonsPage() {
     </div>
   );
 }
+
+/* probando ... */

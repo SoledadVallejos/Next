@@ -48,7 +48,7 @@ export const Sidebar = () => {
         <a href="#" className="inline-flex space-x-2 items-center">
           <span>
             <Image className="rounded-full w-8 h-8" 
-              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c" 
+              src="https://i.pinimg.com/236x/d9/7c/05/d97c05a91cc39f7a332cce023671cebb.jpg" 
               alt="User avatar" 
               width={50}
               height={50}
@@ -56,7 +56,7 @@ export const Sidebar = () => {
             />
           </span>
           <span className="text-sm md:text-base font-bold">
-            Fernando Herrera
+            Pritty Vallejos
           </span>
         </a>
       </div>

@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com'
+        hostname: 'i.pinimg.com'
       },
       {
         protocol: 'https',
@@ -17,3 +17,6 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+
+/* Agrego el path de la img --> seg */

@@ -12,7 +12,7 @@ const getPokemons = async( limit = 20, offset= 0 ):Promise<SimplePokemon[]> => {
     .then( res => res.json() );
 
     const pokemons = data.results.map( pokemon => ({
-      id: pokemon.url.split('/').at(-2)!, //toma el antepenultimo posicion en el arreglo( x el espli)
+      id: pokemon.url.split('/').at(-2)!, //toma el antepenultimo posicion en el arreglo( x el espli), esto porque el id esta en la url ..../pokemon/1
       name: pokemon.name,
     }));
 
@@ -32,7 +32,7 @@ export default async function PokemonsPage() {
   return (
     <div className="flex flex-col">
 
-      <span className="text-5xl my-2">Listado de Pokémons <small>estático</small></span>
+      <span className="text-5xl my-2">Listado de Pokémons <small className="text-blue-500">estático</small></span>
       
       <PokemonGrid pokemons={ pokemons } />
 

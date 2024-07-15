@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 
 
 
-
+// PONE DE FORMA DINAMICA LA METADATA
 export async function generateMetadata({ params }:Props): Promise<Metadata> {
 
   try {
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }:Props): Promise<Metadata> {
 }
 
 
-const getPokemon = async(name: string): Promise<Pokemon> => {
+const getPokemon = async(name: string): Promise<Pokemon> => { // es un apromesa que resuelve un pokemon 
 
 
   try {

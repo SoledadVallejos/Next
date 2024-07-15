@@ -37,3 +37,5 @@ export default function NotFound() {
     </div>
   )
 }
+
+//nombre especifico se debe llamar asi 

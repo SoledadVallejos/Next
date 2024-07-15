@@ -24,3 +24,5 @@ export default function NotFound() {
       </main>
   )
 }
+
+//nombre especifico se debe llamar asi 
